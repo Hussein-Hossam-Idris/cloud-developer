@@ -1,7 +1,8 @@
-import { add, divide } from './units';
+import { add, divide, multiply } from './units';
 
 import { expect } from 'chai';
 import 'mocha';
+import { it } from 'mocha';
 
 describe('add function', () => {
 
@@ -34,6 +35,19 @@ describe('divide', () => {
   });
 
 });
+
+describe('multiply', () => { 
+  it('should multiply 2 and 4', ()=>{
+    const res = multiply(2,4)
+    expect(res).to.equal(8)
+  });
+  
+  it('should multiply 5 and 3', ()=>{
+    const res = multiply(5,3)
+    expect(res).to.equal(15)
+  }); 
+
+ });
 
 // @TODO try creating a new describe block for the "concat" method
 // it should contain an it block for each it statement in the units.ts @TODO.
