@@ -1,5 +1,5 @@
 # udacity-c2-basic-server
-# please work dev -> stage
+
 This is a simple node-express server to explore and understand the Request-Response pattern.
 
 ***
